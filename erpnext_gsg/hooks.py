@@ -94,6 +94,14 @@ app_license = "MIT"
 # Document Events
 # ---------------
 # Hook on document methods and events
+doctype_js = {
+	"Journal Entry": "public/js/journal_event.js",
+	"Payment Entry": "public/js/payment_entry.js",
+}
+doc_events = {
+	"Material Request": {
+		"on_submit": "erpnext_gsg.erp_next_gsg.doc_event.stock_entry_event.create_stock_entry"},
+}
 
 # doc_events = {
 #	"*": {
